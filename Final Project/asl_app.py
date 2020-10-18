@@ -1,13 +1,13 @@
 import tensorflow as tf
-model = tf.keras.models.load_model('new_model6.h5')
+model = tf.keras.models.load_model('my_model.hdf5')
 
 
 import streamlit as st
 st.write("""
-          American  Sign language  Prediction
+          American  Sign language Recognition using Keras
          """
          )
-st.write("This is a simple image classification web app to predict hand sign letters")
+st.write("This is a simple image classification web app to predict american sign letters!!")
 file = st.file_uploader("Please upload an image file", type=["jpg", "png"])
 
 
@@ -56,5 +56,5 @@ else:
     else:
         st.write("G")
     
-    st.text("Probability (0: Paper, 1: Rock, 2: Scissor")
+    st.text("Probability (0: A, 1: B, 2: C")
     st.write(prediction)
