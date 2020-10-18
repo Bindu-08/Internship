@@ -4,10 +4,14 @@ model = tf.keras.models.load_model('my_model.hdf5')
 
 import streamlit as st
 st.write("""
+                        TECHNOCOLABS FINAL PROJECT 
           American  Sign language Recognition using Keras
          """
          )
-st.write("This is a simple image classification web app to predict american sign letters!!")
+st.write("""This is a simple image classification web app to predict american sign letters
+
+         !!!
+        dDONE BY BINDU SRI SAI """)
 file = st.file_uploader("Please upload an image file", type=["jpg", "png"])
 
 
@@ -56,5 +60,5 @@ else:
     else:
         st.write("G")
     
-    st.text("Probability (0: A, 1: B, 2: C")
+    st.text("Probability (1: A, 2: B, 3: C")
     st.write(prediction)
