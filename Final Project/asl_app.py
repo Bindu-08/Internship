@@ -44,21 +44,10 @@ else:
     elif np.argmax(prediction) == 2:
         
         st.write("B")
-    elif np.argmax(prediction) == 3:
-        
-        st.write("C")
-    elif np.argmax(prediction) == 4:
-        
-        st.write("D")
-    elif np.argmax(prediction) == 5:
-        
-        st.write("E")
-    elif np.argmax(prediction) == 6:
-        
-        st.write("F")
         
     else:
-        st.write("G")
+        st.write("C")
     
     st.text("Probability (1: A, 2: B, 3: C")
-    st.write(prediction)
+
+st.write(prediction)
